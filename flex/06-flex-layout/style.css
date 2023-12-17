@@ -47,6 +47,7 @@ input {
 .footer {
   display: flex;
   padding: 5px 10px;
+  justify-content: space-between;
 }
 
 .header ul,
@@ -67,6 +68,6 @@ input {
   gap: 15px;
 }
 
-.left-links {
+/* .left-links {
   margin-right: auto;
-}
+} */
