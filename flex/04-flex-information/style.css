@@ -21,12 +21,17 @@ img,
 
 /* NOT COMPLETELY PERFECT, FIX AT LATER DATE */
 
-.content,
-.text-content {
+.content {
   display: flex;
   justify-content: center;
   gap: 52px;
   /* justify-content: space-around; */
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 200px;
 }
 
 /* do not edit this footer */
