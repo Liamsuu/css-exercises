@@ -39,6 +39,7 @@ button {
   pointer-events: none;
   opacity: 0%;
   text-align: center;
+  animation: 200ms ease-out 0s 1 slideout;
 }
 
 .popup-modal p {
@@ -56,6 +57,29 @@ button {
 .popup-modal.show {
   opacity: 100%;
   pointer-events: all;
+  animation: 300ms ease-out 0s 1 slidein;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -90%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY((-50%));
+  }
+}
+
+@keyframes slideout {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -90%);
+  }
 }
 
 .backdrop.show {
